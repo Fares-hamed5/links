@@ -128,18 +128,6 @@ a{
 
 }
 
-
-.TW{
-    background:url(../img/TWIT.svg) no-repeat;
-    background-size: 35px;
-    background-position: 7.5% center  ;
-    border: 2.5px dashed #56b2f0;
-    box-shadow: 0px 0px 15px .5px #56b2f0a6;
-    animation: slide-in 1.5s forwards;
-
-
-}
-
 .Dark {
 background: #3d3d3d url(SUN.svg) no-repeat;
 background-size: 25px;
