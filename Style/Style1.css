@@ -1,0 +1,297 @@
+html{
+
+overflow-x: hidden;
+
+}
+
+body{
+overflow-x: hidden;
+    text-align: center;
+    background: #1f1f1f;
+}
+
+::selection{
+
+background: none;
+color: none;
+
+}
+
+:is(h2, h4, div, a){
+
+    color: #ffffff;
+
+}
+
+*{
+
+    transition: .5s;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+.name{
+    padding: 0px;
+    margin: 50px 0px;
+    margin-top: 70px;
+    font-family: Font1;
+    font-size: 25px;
+    font-weight: 100;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #ff0000;
+    letter-spacing: 3px;
+    opacity: 0; 
+    animation: fadeIn 2s forwards;
+    animation-delay: 1s; 
+    }
+
+ 
+    
+    .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: #4d4c4c url(../img/Fares.jpg) no-repeat;
+    background-size: 205px;
+    background-position: center center;
+    display: inline-block;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 20px 3px #464646;
+    opacity: 0; 
+    animation: fadeIn 2s forwards; 
+    animation-delay: 2s; 
+    }
+
+  
+    :is(.WA, .TE, .IN, .FB, .TW){
+        letter-spacing: 1.5px;
+        overflow: hidden;
+        margin: 20px 0px;
+        font-size: 21px;
+        padding: 15px 40px;
+        padding-right: 2px;
+        width: 120px;
+        height: 20px;
+        border-radius: 30px 0px 30px 0px;
+        background: no-repeat;
+        font-family: Font2;
+        display: inline-block;
+        color: #FFFFFF;
+    }
+
+
+.WA {
+    background: url(../img/WA2.svg) no-repeat;
+    background-size: 35px;
+    background-position: 5% center;
+    border: 2.5px dashed #209c20;
+    box-shadow: 0px 0px 15px .5px #209c20a6;
+    animation: slide-in 1.5s forwards;
+   
+    }
+    
+
+
+.TE{
+
+    background:url(../img/TELE.svg) no-repeat;
+    background-size: 35px;
+    background-position: 5% center  ;
+    border: 2.5px dashed #119af5;
+    box-shadow: 0px 0px 15px .5px #119af5a6;
+    animation: slide-in2 1.5s forwards;
+
+}
+
+.IN{
+    background:url(../img/INSTA.svg) no-repeat;
+    background-size: 27px;
+    background-position: 5% center  ;
+    border: 2.5px dashed #da11f5;
+    box-shadow: 0px 0px 15px .5px #da11f5a6;
+    animation: slide-in 1.5s forwards;
+
+}   
+
+.FB{
+    background:url(../img/FB.svg) no-repeat;
+    background-size: 18px;
+    background-position: 7.5% center  ;
+    border: 2.5px dashed #2711f5;
+    box-shadow: 0px 0px 15px .5px #2811f5a6;
+    animation: slide-in2 1.5s forwards;
+
+}
+
+
+.TW{
+    background:url(../img/TWIT.svg) no-repeat;
+    background-size: 35px;
+    background-position: 7.5% center  ;
+    border: 2.5px dashed #56b2f0;
+    box-shadow: 0px 0px 15px .5px #56b2f0a6;
+    animation: slide-in 1.5s forwards;
+
+
+}
+
+.Dark {
+background: #3d3d3d url(SUN.svg) no-repeat;
+background-size: 25px;
+background-position: center center;
+position: fixed;
+top: 10px;
+left: 20px;
+outline: none;
+border: none;
+box-shadow: 0px 0px 10px 1px #303030;
+opacity: 0;
+animation: fadeIn 2s forwards;
+animation-delay: 1s;
+width: 40px;
+height: 40px;
+-webkit-appearance: none;
+outline: none;
+border-radius: 20px;
+transition: 0.5s;
+
+}
+
+
+
+.Dark:checked{
+
+background: #e2e2e2 url(Moon.svg  ) no-repeat;
+background-position: center center;
+background-size: 25px;
+transform: rotate(120deg);
+box-shadow: 0px 0px 10px 1px #dfdfdf;
+transition: 0.5s;
+
+
+}
+
+.Error{
+opacity: 0;
+display: none;
+
+}
+
+
+  
+
+
+@font-face {
+
+    font-family: Font2;
+    src: url(Fonts/Arshin.ttf);
+
+}
+
+@font-face {
+    font-family: Font1;
+    src: url(Fonts/Graffiti.otf);
+
+}
+
+@font-face {
+    font-family: Font3;
+    src: url(Fonts/Eleganc.ttf);
+}
+
+@keyframes slide-in {
+    from {
+    transform: translateX(100%);
+    }
+    to {
+    transform: translateX(0);
+    }
+    }
+
+    @keyframes slide-in2 {
+        from {
+        transform: translateX(-100%);
+        }
+        to {
+        transform: translateX(0);
+        }
+        }
+    
+    @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+ 
+@media screen and (min-width:8in) and (max-width:10000in) {
+
+.name, .img, .WA, .TE, .IN, .FB, .TW, button{
+
+
+display: none;
+
+}
+
+body{
+
+overflow-x: visible;
+padding: 60px;
+
+}
+    
+.Error{
+background: url(mobile.svg) no-repeat;
+background-size: 150px;
+background-position: center 55%;
+width: 350px;
+height: 350px;
+box-shadow: 0px 0px 20px 2px #00000080;
+display: block;
+border-radius: 75px 0px 75px 0px;
+padding: 20px;
+text-align: center;
+animation: fadeIn 1s forwards;
+animation-delay: .5s;
+}
+
+.Error h2, h4, a{
+
+    color: #FFFFFF;
+    font-family: Font3;
+
+}
+
+.Error h2{
+
+    font-size: 18px;
+    text-shadow: 0px 0px 10px #f05656;
+
+
+}
+.Error h4{
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-shadow: 0px 0px 10px #c7191998;
+
+}
+
+.Error a{
+    display: inline-block;
+    margin-top: 195px ;
+    font-size: 15px;
+    font-weight: bold;
+    background: #119af5;
+    width: 150px;
+    padding: 13px;   
+    text-align: center;
+    border: solid 1px #141414c4;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 0px 0px 10px 1px #1a567e;
+
+}
+
+}

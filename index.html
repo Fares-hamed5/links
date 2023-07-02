@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>G-links</title>
+  <link rel="icon" href="Style/icon.svg">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='Style/Style1.css'>
+ 
+  <script src="Style/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+  
+  
+
+<h2 class="name">Fares Hamed</h2>
+
+<div class="img"></div>   <br> 
+
+<a href="https://wa.me/201204477159" class="WA" target="_blank">WhatsApp</a> <br> 
+
+<a href="https://t.me/fares_hamed" class="TE" target="_blank">Telegram</a> <br>   
+
+<a href="https://Instagram.com/fares_hamed5" class="IN" target="_blank">Instagram</a> <br>   
+
+<a href="https://Facebook.com/F.Glitch.EG"  class="FB" target="_blank">Facebook</a> <br>   
+
+<a href="https://Twitter.com/glitch_eg_404" class="TW" target="_blank">Twitter</a> <br>   
+
+<center>
+<div class="Error"  >
+
+<h2>الموقع لا يدعم شاشتك</h2>
+
+<h4>جرب هاتفك او ايبادك</h4>
+
+<a href="http://t.me/glitch_404_eg" target="_blank" rel="noopener noreferrer">تواصل معي</a>
+
+</div>
+</center>
+<input type="checkbox"  class="Dark" checked>
+
+<script>
+  $(document).ready(function() {
+    const checkbox = $('.Dark');
+    checkbox.change(function() {
+      if (this.checked) {
+        $('body').css({
+          'background': '#1f1f1f',
+          'color': '#ffffff'
+        });
+        $('h2, h4, div, a').css({
+          'color': '#ffffff'
+        });
+      } else {
+        $('body').css({
+          'background': '#ffffff',
+          'color': '#000000'
+        });
+        $('h2, h4, div, a').css({
+          'color': '#000000'
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>
